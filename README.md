@@ -1,4 +1,4 @@
-# Ring-Buffer-Exper.
+# Algo-Scouting
 Repo to Scout for new Algorithims, Programming Concepts etc. 
 
 # Why this Project Exists..
