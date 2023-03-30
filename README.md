@@ -1,2 +1,8 @@
 # Ring-Buffer-Exper.
-Collection of code to play around and learn Ring Buffers from the very basic to the Mammothic giants they have become. Being used in Redis, Kafka, Linux Kernel etc...
+Repo to Scout for new Algorithims, Programming Concepts etc. 
+
+# Why this Project Exists..
+To read, research and apply programming paradigms in this repo...
+```
+$ Also this makes you smart, so you know
+```
