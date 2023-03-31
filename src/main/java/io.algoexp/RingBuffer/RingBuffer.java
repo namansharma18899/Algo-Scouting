@@ -1,3 +1,5 @@
+package io.algoexp;
+
 import java.util.*;
 import java.io.*;
 
@@ -7,8 +9,6 @@ class CircularBuffer {
     private int readSequence;
     private int writeSequence;
     private ArrayList<Integer> data;
-
-
 
     public CircularBuffer(int capacity) {
         this.capacity = (capacity < 1) ? DEFAULT_CAPACITY : capacity;
@@ -43,5 +43,4 @@ class Main {
     public static void main(String args[]) throws IOException {
         System.out.println("SkeletonCode");
     }
-
 }
