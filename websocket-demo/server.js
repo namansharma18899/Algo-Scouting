@@ -13,11 +13,12 @@ const  websocket = new WebsocketServer({
 })
 
 websocket.on("request", request => {
+
     connection = request.accept(null,request.origin)
-    connection.on("onopen", ()=> {console.log("Open for servring")})
-    connection.on("onclose", ()=> {console.log("Open for closed")})
-    connection.on('onmessage', message => {
-        console.log(`received message ${message}`)
+    connection.on("open", ()=> {console.log("Open for servring")})
+    connection.on("close", ()=> {console.log("Open for closed")})
+    connection.on('message', message => {
+        console.log(`received message ${message.utf8Data}`)
     })
 })
 
