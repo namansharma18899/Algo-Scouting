@@ -8,3 +8,4 @@ To read, research and apply programming paradigms in this repo...
 * [Concepts](#concepts)
 ## Concepts
     - Ring Buffer Implementation
+    - Web Sockets Implementation
