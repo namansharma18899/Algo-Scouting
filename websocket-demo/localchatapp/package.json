@@ -1,0 +1,17 @@
+{
+  "name": "localchatapp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve-handler": "^6.1.5",
+    "websocket": "^1.0.34",
+    "ws": "^8.14.1"
+  }
+}
