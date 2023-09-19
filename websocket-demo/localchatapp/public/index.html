@@ -14,16 +14,24 @@
         <p class="msg">Messages:</p>
         <div id="messages" class="messages"></div>
         <form id="msgForm" class="msgForm">
-            <input type="text" placeholder="Send message" class="input" id="inputBox" />
+            <input type="text" required="required" pattern="[A-Za-z0-9]{1,20}" placeholder="Send message" class="input" id="inputBox" />
             <input type="submit" class="btn" value="Send">
         </form>
     </div>
+
     <script type="module" >
+        var client_details = {
+            'color': null
+        }
         const ws = new WebSocket(`ws://${window.document.location.host}`);
         ws.binaryType = "blob";
         // Log socket opening and closing
         ws.addEventListener("open", event => {
-            console.log("Websocket connection opened");
+            console.log("Websocket connection opened"); 
+            var colors = ['yellow', 'green','red','grey', 'blueviolet']
+            var Clr = colors[Math.floor(Math.random() * colors.length)];
+            console.log('Color => ', Clr)
+            document.documentElement.style.setProperty('--some-color', Clr);
         });
         ws.addEventListener("close", event => {
             console.log("Websocket connection closed");
