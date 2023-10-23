@@ -1,0 +1,4 @@
+Index: 
+Provides the facility to search rows based on a specific desired key combination. Index in itself is made up of a datastructure known as B-Tree. Hashmap doesn't work in this case cause the keys are inter-related....(idk the exact reason)
+
+B-Trees/B-plus trees
